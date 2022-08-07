@@ -1,0 +1,9 @@
+def function_4():
+    num1 = [10,20,30,50,30,60,30,70,30,80,30,90,30]
+    print(num1.count(30))
+    print(num1)
+    
+    for i in range(num1.count(30)):
+        num1.remove(30)
+    print(num1)
+function_4()
