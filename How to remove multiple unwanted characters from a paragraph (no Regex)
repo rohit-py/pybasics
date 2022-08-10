@@ -1,0 +1,28 @@
+#Method 1
+
+def function_22():
+    str1 = "this $is !@a $$test ^&str1. this is a str2. )(*&this is a str3"
+    unwanted_chars = "!@#$%^&*()"
+    final_str = []
+    
+    for chars in str1:
+        #print(chars)
+        if chars not in unwanted_chars:
+            final_str.append(chars)
+    print("".join(final_str))
+        
+        
+function_22()
+
+
+#Method 2
+
+def function_23():
+    str1 = "this $is !@a $$test ^&str1. this is a str2. )(*&this is a str3"
+    unwanted_chars = "!@#$%^&*()"
+    
+    for unwanted in unwanted_chars:
+        str1 = str1.replace(unwanted,"")
+    print(str1)
+    
+function_23()
